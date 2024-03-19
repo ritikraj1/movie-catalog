@@ -1,6 +1,6 @@
 # Movie Catalog Project
 
-Welcome to the Movie Catalog Project! This project is a microservices-based application built using Spring Boot, following best practices for scalability, modularity, and reliability.
+Welcome to the Movie Catalog Project! This project is a microservices-based application built using Spring Boot and Spring Cloud, following best practices for scalability, modularity, and reliability.
 
 ## Introduction
 
