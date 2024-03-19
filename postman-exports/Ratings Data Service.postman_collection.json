@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "fc408fe4-9975-4536-bd72-aad0ecccc4f5",
+		"name": "Ratings Data Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29893332"
+	},
+	"item": [
+		{
+			"name": "Rating",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}:8083/ratingsdata/5",
+					"host": [
+						"{{domain}}"
+					],
+					"port": "8083",
+					"path": [
+						"ratingsdata",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Ratings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}:8083/ratingsdata/users/1",
+					"host": [
+						"{{domain}}"
+					],
+					"port": "8083",
+					"path": [
+						"ratingsdata",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

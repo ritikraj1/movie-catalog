@@ -1,0 +1,4 @@
+server.port: 8082
+api.key: 412b79f0362162d75c194b9b00b99f99
+
+spring.boot.admin.client.url: lb://ADMIN-SERVER

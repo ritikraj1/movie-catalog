@@ -1,0 +1,29 @@
+{
+	"info": {
+		"_postman_id": "af5c3380-0a3a-446c-8012-00b50ceacffe",
+		"name": "Movie Catalog Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29893332"
+	},
+	"item": [
+		{
+			"name": "Catalog",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}:8081/catalog/2",
+					"host": [
+						"{{domain}}"
+					],
+					"port": "8081",
+					"path": [
+						"catalog",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

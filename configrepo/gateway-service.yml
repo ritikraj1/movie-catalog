@@ -1,0 +1,26 @@
+server.port: 8084
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: movie-info
+          uri: lb://MOVIE-INFO-SERVICE
+          predicates:
+            - Path=/movies/**
+          filters:
+            - AuthenticationFilter
+        - id: movie-catalog
+          uri: lb://MOVIE-CATALOG-SERVICE
+          predicates:
+            - Path=/catalog/**
+          filters:
+            - AuthenticationFilter
+        - id: security-service
+          uri: lb://SECURITY-SERVICE
+          predicates:
+            - Path=/auth/**
+
+jwt-secret: 21dd165b653ecbbb496f80a41294f64b5efb846b4489efff0b2c38bbb27b102f
+
+spring.boot.admin.client.url: lb://ADMIN-SERVER

@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/credentials
+    username: root
+    password: ritikraj240
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+jwt-secret: 21dd165b653ecbbb496f80a41294f64b5efb846b4489efff0b2c38bbb27b102f
+
+server.port: 8085
+
+#logging.level.org.springframework.security: TRACE
